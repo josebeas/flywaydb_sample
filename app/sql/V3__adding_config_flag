@@ -1,0 +1,9 @@
+CREATE TABLE CONFIG_FLAGS (
+   ID             BIGINT        NOT NULL PRIMARY KEY,
+   NAME     VARCHAR (30)  NOT NULL,
+   CLIENT     VARCHAR (30)  NOT NULL,
+   VALUE      VARCHAR (30)  NOT NULL,
+   DEFAULT      VARCHAR (30)  NOT NULL
+);
+
+INSERT INTO CONFIG_FLAGS (ID, NAME, CLIENT, VALUE, DEFAULT) VALUES (1, 'Microsoft', 'image.welcome', 'image_custom.png', 'image.png');
